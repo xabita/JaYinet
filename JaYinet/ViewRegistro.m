@@ -37,13 +37,38 @@
 
 - (IBAction)btnGuardar:(id)sender {
     
-    
+   //pacientes
     PFObject *pacienteObject = [PFObject objectWithClassName:@"pacientes"];
      pacienteObject[@"nom_paciente"] = self.txtNombre.text;
      pacienteObject[@"ap_paterno"] = self.txtPaterno.text;
      pacienteObject[@"ap_materno"] = self.txtMaterno.text;
      pacienteObject[@"domicilio"] = self.txtDomicilio.text;
-     [pacienteObject saveInBackground];
+    // [pacienteObject saveInBackground];
+    
+    
+    //estado inicial
+    PFObject *estadoObject = [PFObject objectWithClassName:@"historial"];
+    estadoObject[@"desc_estado"] = self.txtEstado.text;
+    // Add a relation between the Post and Comment
+    estadoObject[@"idpaciente"] = pacienteObject;
+
+    [estadoObject saveInBackground];
+    //datos responsable
+    PFObject *responsableObject = [PFObject objectWithClassName:@"responsables"];
+    responsableObject[@"nom_responsable"] = self.txtResponsable.text;
+    responsableObject[@"no_movil"] = self.txtCelular.text;
+    responsableObject[@"idpaciente"] = pacienteObject;
+
+    
+    [responsableObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Guardando idddd %@", pacienteObject.objectId);
+            // The object has been saved.
+        } else {
+            // There was a problem, check error.description
+        }
+    }];
+    
     
 }
 @end

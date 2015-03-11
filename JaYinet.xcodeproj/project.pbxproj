@@ -34,6 +34,9 @@
 		260493091AAD651D0005DDA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260493081AAD651D0005DDA4 /* UIKit.framework */; };
 		2604930B1AAD65290005DDA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2604930A1AAD65290005DDA4 /* Foundation.framework */; };
 		2604930F1AAD82D60005DDA4 /* ViewRegistro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2604930E1AAD82D60005DDA4 /* ViewRegistro.m */; };
+		2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 2678202B1AAEE6D6000065A4 /* ViewBuscaPaciente.m */; };
+		2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */ = {isa = PBXBuildFile; fileRef = 2678202E1AAEE778000065A4 /* ViewEstado.m */; };
+		267820321AAEE994000065A4 /* ViewHistorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 267820311AAEE994000065A4 /* ViewHistorial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,12 @@
 		2604930A1AAD65290005DDA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2604930D1AAD82D60005DDA4 /* ViewRegistro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRegistro.h; sourceTree = "<group>"; };
 		2604930E1AAD82D60005DDA4 /* ViewRegistro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRegistro.m; sourceTree = "<group>"; };
+		2678202A1AAEE6D6000065A4 /* ViewBuscaPaciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBuscaPaciente.h; sourceTree = "<group>"; };
+		2678202B1AAEE6D6000065A4 /* ViewBuscaPaciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBuscaPaciente.m; sourceTree = "<group>"; };
+		2678202D1AAEE778000065A4 /* ViewEstado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewEstado.h; sourceTree = "<group>"; };
+		2678202E1AAEE778000065A4 /* ViewEstado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewEstado.m; sourceTree = "<group>"; };
+		267820301AAEE994000065A4 /* ViewHistorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHistorial.h; sourceTree = "<group>"; };
+		267820311AAEE994000065A4 /* ViewHistorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistorial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +152,12 @@
 		2604924E1AAC360B0005DDA4 /* JaYinet */ = {
 			isa = PBXGroup;
 			children = (
+				267820301AAEE994000065A4 /* ViewHistorial.h */,
+				267820311AAEE994000065A4 /* ViewHistorial.m */,
+				2678202D1AAEE778000065A4 /* ViewEstado.h */,
+				2678202E1AAEE778000065A4 /* ViewEstado.m */,
+				2678202A1AAEE6D6000065A4 /* ViewBuscaPaciente.h */,
+				2678202B1AAEE6D6000065A4 /* ViewBuscaPaciente.m */,
 				2604930D1AAD82D60005DDA4 /* ViewRegistro.h */,
 				2604930E1AAD82D60005DDA4 /* ViewRegistro.m */,
 				260492531AAC360B0005DDA4 /* AppDelegate.h */,
@@ -316,9 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */,
 				260492581AAC360B0005DDA4 /* Welcome.m in Sources */,
+				2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */,
 				260492551AAC360B0005DDA4 /* AppDelegate.m in Sources */,
 				260492521AAC360B0005DDA4 /* main.m in Sources */,
+				267820321AAEE994000065A4 /* ViewHistorial.m in Sources */,
 				2604930F1AAD82D60005DDA4 /* ViewRegistro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

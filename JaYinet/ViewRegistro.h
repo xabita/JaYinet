@@ -21,6 +21,12 @@
 @property (strong, nonatomic) IBOutlet UITextView *txtEstado;
 @property (strong, nonatomic) IBOutlet UIButton *btnGuardar;
 @property (strong, nonatomic) IBOutlet UIButton *btnRegresar;
+@property (strong, nonatomic) IBOutlet UILabel *lblResponsable;
+@property (strong, nonatomic) IBOutlet UITextField *txtResponsable;
+@property (strong, nonatomic) IBOutlet UITextField *txtCelular;
+
+
+
 - (IBAction)btnGuardar:(id)sender;
 
 @end
