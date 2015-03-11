@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ViewBuscaPaciente : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblTitulo;
@@ -16,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnHistorial;
 @property (strong, nonatomic) IBOutlet UILabel *lblNombre;
 @property (strong, nonatomic) IBOutlet UIButton *btnBuscar;
+- (IBAction)btnBuscar:(id)sender;
 
 @end

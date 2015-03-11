@@ -34,4 +34,25 @@
 }
 */
 
+- (IBAction)btnBuscar:(id)sender {
+    PFQuery *query = [PFQuery queryWithClassName:@"pacientes"];
+    [query whereKey:@"objectId" equalTo:self.txtPaciente.text];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+                 NSLog(@"%@", object);
+                self.lblNombre.text= object[@"nom_paciente"]; object[@"nom_paciente"]; object[@"nom_paciente"];
+                
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
+}
 @end
