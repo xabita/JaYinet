@@ -29,6 +29,16 @@ NSString *idpaciente;
         // show the signup or login screen
     }
     
+    NSDictionary *dimensions = @{
+                                 // What type of news is this?
+                                 @"category": @"Consulta",
+                                 // Is it a weekday or the weekend?
+                                 @"dayType": @"weekday",
+                                 };
+    // Send the dimensions to Parse along with the 'read' event
+    
+    [PFAnalytics trackEvent:@"read" dimensions:dimensions];
+    
     
     // Do any additional setup after loading the view.
 }

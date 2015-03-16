@@ -11,6 +11,7 @@
 //
 
 #import <Parse/Parse.h>
+#import <ParseCrashReporting/ParseCrashReporting.h>
 
 #import "Welcome.h"
 
@@ -23,9 +24,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [ParseCrashReporting enable];
+   
+    
     // Override point for customization after application launch.
     [Parse setApplicationId:@"Dfgwmw8KdFMS1FqtMsJTEJwIS9ZzxxmZyn1pRZsO"
                   clientKey:@"DTzSdMo14iEgC759YXxrr3SXQDoPJjfehvzKZ376"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     
     // Register for Push Notitications
@@ -36,6 +43,18 @@
                                                                              categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
+    
+    
+    NSDictionary *dimensions = @{
+                                 // What type of news is this?
+                                 @"category": @"Principal",
+                                 // Is it a weekday or the weekend?
+                                 @"dayType": @"weekday",
+                                 };
+    // Send the dimensions to Parse along with the 'read' event
+    
+    [PFAnalytics trackEvent:@"read" dimensions:dimensions];
+    
     
     return YES;
 }
