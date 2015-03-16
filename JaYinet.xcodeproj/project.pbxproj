@@ -41,6 +41,9 @@
 		26CA0E4E1AB6AD3E0029D190 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */; };
 		26CA0E4F1AB6AD3E0029D190 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4D1AB6AD3E0029D190 /* Parse.framework */; };
 		26CA0E521AB773B10029D190 /* ViewMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E511AB773B10029D190 /* ViewMenu.m */; };
+		26CA0E551AB77BF00029D190 /* ViewConsultarPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E541AB77BF00029D190 /* ViewConsultarPaciente.m */; };
+		26CA0E581AB7809F0029D190 /* ViewHistorialPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E571AB7809F0029D190 /* ViewHistorialPaciente.m */; };
+		26CA0E5B1AB780CE0029D190 /* ViewRegistroResponsable.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E5A1AB780CE0029D190 /* ViewRegistroResponsable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,12 @@
 		26CA0E4D1AB6AD3E0029D190 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		26CA0E501AB773B10029D190 /* ViewMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMenu.h; sourceTree = "<group>"; };
 		26CA0E511AB773B10029D190 /* ViewMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMenu.m; sourceTree = "<group>"; };
+		26CA0E531AB77BF00029D190 /* ViewConsultarPaciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConsultarPaciente.h; sourceTree = "<group>"; };
+		26CA0E541AB77BF00029D190 /* ViewConsultarPaciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewConsultarPaciente.m; sourceTree = "<group>"; };
+		26CA0E561AB7809F0029D190 /* ViewHistorialPaciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHistorialPaciente.h; sourceTree = "<group>"; };
+		26CA0E571AB7809F0029D190 /* ViewHistorialPaciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistorialPaciente.m; sourceTree = "<group>"; };
+		26CA0E591AB780CE0029D190 /* ViewRegistroResponsable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRegistroResponsable.h; sourceTree = "<group>"; };
+		26CA0E5A1AB780CE0029D190 /* ViewRegistroResponsable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRegistroResponsable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +189,12 @@
 				26CA0E4A1AB6542F0029D190 /* ViewSesion.m */,
 				26CA0E501AB773B10029D190 /* ViewMenu.h */,
 				26CA0E511AB773B10029D190 /* ViewMenu.m */,
+				26CA0E531AB77BF00029D190 /* ViewConsultarPaciente.h */,
+				26CA0E541AB77BF00029D190 /* ViewConsultarPaciente.m */,
+				26CA0E561AB7809F0029D190 /* ViewHistorialPaciente.h */,
+				26CA0E571AB7809F0029D190 /* ViewHistorialPaciente.m */,
+				26CA0E591AB780CE0029D190 /* ViewRegistroResponsable.h */,
+				26CA0E5A1AB780CE0029D190 /* ViewRegistroResponsable.m */,
 				260492591AAC360B0005DDA4 /* Main.storyboard */,
 				2604925C1AAC360B0005DDA4 /* Images.xcassets */,
 				2604925E1AAC360B0005DDA4 /* LaunchScreen.xib */,
@@ -351,14 +366,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */,
+				26CA0E551AB77BF00029D190 /* ViewConsultarPaciente.m in Sources */,
 				260492581AAC360B0005DDA4 /* Welcome.m in Sources */,
 				2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */,
 				26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */,
 				26CA0E521AB773B10029D190 /* ViewMenu.m in Sources */,
 				260492551AAC360B0005DDA4 /* AppDelegate.m in Sources */,
 				260492521AAC360B0005DDA4 /* main.m in Sources */,
+				26CA0E5B1AB780CE0029D190 /* ViewRegistroResponsable.m in Sources */,
 				267820321AAEE994000065A4 /* ViewHistorial.m in Sources */,
 				2604930F1AAD82D60005DDA4 /* ViewRegistro.m in Sources */,
+				26CA0E581AB7809F0029D190 /* ViewHistorialPaciente.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
