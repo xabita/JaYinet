@@ -8,6 +8,8 @@
 
 #import "ViewSesion.h"
 
+UIAlertView     *alert;
+
 @interface ViewSesion ()
 
 @end
@@ -45,8 +47,18 @@
                                             [installation saveInBackground];
                                             
                                             
+                                            
                                         } else {
-                                            // The login failed. Check error to see why.
+                                            
+                                            
+                                            alert = [[UIAlertView alloc] initWithTitle:@"Alerta Oaxaca"
+                                                                               message:@"Error de inicio de sesion"
+                                                                              delegate:self
+                                                                     cancelButtonTitle:@"Cancelar"
+                                                                     otherButtonTitles: nil];
+                                            [alert show];
+                                            
+                                            
                                         }
                                     }];
     

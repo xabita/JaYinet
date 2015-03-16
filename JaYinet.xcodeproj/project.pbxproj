@@ -40,6 +40,7 @@
 		26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E4A1AB6542F0029D190 /* ViewSesion.m */; };
 		26CA0E4E1AB6AD3E0029D190 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */; };
 		26CA0E4F1AB6AD3E0029D190 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4D1AB6AD3E0029D190 /* Parse.framework */; };
+		26CA0E521AB773B10029D190 /* ViewMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E511AB773B10029D190 /* ViewMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		26CA0E4A1AB6542F0029D190 /* ViewSesion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSesion.m; sourceTree = "<group>"; };
 		26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		26CA0E4D1AB6AD3E0029D190 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		26CA0E501AB773B10029D190 /* ViewMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMenu.h; sourceTree = "<group>"; };
+		26CA0E511AB773B10029D190 /* ViewMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				260492571AAC360B0005DDA4 /* Welcome.m */,
 				26CA0E491AB6542F0029D190 /* ViewSesion.h */,
 				26CA0E4A1AB6542F0029D190 /* ViewSesion.m */,
+				26CA0E501AB773B10029D190 /* ViewMenu.h */,
+				26CA0E511AB773B10029D190 /* ViewMenu.m */,
 				260492591AAC360B0005DDA4 /* Main.storyboard */,
 				2604925C1AAC360B0005DDA4 /* Images.xcassets */,
 				2604925E1AAC360B0005DDA4 /* LaunchScreen.xib */,
@@ -349,6 +354,7 @@
 				260492581AAC360B0005DDA4 /* Welcome.m in Sources */,
 				2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */,
 				26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */,
+				26CA0E521AB773B10029D190 /* ViewMenu.m in Sources */,
 				260492551AAC360B0005DDA4 /* AppDelegate.m in Sources */,
 				260492521AAC360B0005DDA4 /* main.m in Sources */,
 				267820321AAEE994000065A4 /* ViewHistorial.m in Sources */,

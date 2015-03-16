@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-@interface ViewSesion : UIViewController
+@interface ViewSesion : UIViewController<UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *txtUsuario;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (strong, nonatomic) IBOutlet UIButton *btnEntrar;
