@@ -73,6 +73,14 @@
     [estadoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             NSLog(@"Se actualizó el estado del paciente correctamente. %@", estadoObject.objectId);
+            // Create our Installation query
+            PFQuery *pushQuery = [PFInstallation query];
+            [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+            
+            // Send push notification to query
+            [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                           withMessage:self.txtEstado.text];
+            
         } else {
             // There was a problem, check error.description
         }

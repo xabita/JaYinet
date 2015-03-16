@@ -38,6 +38,8 @@
 		2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */ = {isa = PBXBuildFile; fileRef = 2678202E1AAEE778000065A4 /* ViewEstado.m */; };
 		267820321AAEE994000065A4 /* ViewHistorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 267820311AAEE994000065A4 /* ViewHistorial.m */; };
 		26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E4A1AB6542F0029D190 /* ViewSesion.m */; };
+		26CA0E4E1AB6AD3E0029D190 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */; };
+		26CA0E4F1AB6AD3E0029D190 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA0E4D1AB6AD3E0029D190 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		267820311AAEE994000065A4 /* ViewHistorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistorial.m; sourceTree = "<group>"; };
 		26CA0E491AB6542F0029D190 /* ViewSesion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSesion.h; sourceTree = "<group>"; };
 		26CA0E4A1AB6542F0029D190 /* ViewSesion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSesion.m; sourceTree = "<group>"; };
+		26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		26CA0E4D1AB6AD3E0029D190 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,21 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260493011AAD646E0005DDA4 /* AudioToolbox.framework in Frameworks */,
 				2604930B1AAD65290005DDA4 /* Foundation.framework in Frameworks */,
 				260493091AAD651D0005DDA4 /* UIKit.framework in Frameworks */,
 				260493071AAD65060005DDA4 /* CFNetwork.framework in Frameworks */,
 				260493051AAD64AC0005DDA4 /* SystemConfiguration.framework in Frameworks */,
 				260493031AAD64850005DDA4 /* MobileCoreServices.framework in Frameworks */,
-				260493011AAD646E0005DDA4 /* AudioToolbox.framework in Frameworks */,
 				260492FF1AAD5A210005DDA4 /* Security.framework in Frameworks */,
 				260492FD1AAD5A130005DDA4 /* QuartzCore.framework in Frameworks */,
 				260492FB1AAD5A030005DDA4 /* CoreGraphics.framework in Frameworks */,
 				260492F91AAD59F20005DDA4 /* StoreKit.framework in Frameworks */,
+				26CA0E4F1AB6AD3E0029D190 /* Parse.framework in Frameworks */,
 				260492F71AAD59B20005DDA4 /* libz.1.1.3.dylib in Frameworks */,
 				260492F51AAD59300005DDA4 /* libstdc++.6.dylib in Frameworks */,
 				260492F31AAD58FF0005DDA4 /* CoreLocation.framework in Frameworks */,
 				260492EE1AAD589B0005DDA4 /* ParseUI.framework in Frameworks */,
 				260492C31AAD56830005DDA4 /* libsqlite3.dylib in Frameworks */,
+				26CA0E4E1AB6AD3E0029D190 /* Bolts.framework in Frameworks */,
 				260492E01AAD589B0005DDA4 /* Parse.framework in Frameworks */,
 				260492DF1AAD589B0005DDA4 /* Bolts.framework in Frameworks */,
 				260492E21AAD589B0005DDA4 /* ParseFacebookUtils.framework in Frameworks */,
@@ -218,6 +224,8 @@
 		2604930C1AAD65A10005DDA4 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				26CA0E4D1AB6AD3E0029D190 /* Parse.framework */,
+				26CA0E4C1AB6AD3E0029D190 /* Bolts.framework */,
 				260492C21AAD56830005DDA4 /* libsqlite3.dylib */,
 				260492F21AAD58FF0005DDA4 /* CoreLocation.framework */,
 				260492F61AAD59B20005DDA4 /* libz.1.1.3.dylib */,
@@ -285,6 +293,7 @@
 				TargetAttributes = {
 					2604924B1AAC360B0005DDA4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					260492641AAC360B0005DDA4 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -422,6 +431,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5cb5cf52-6f3b-40b9-a221-3c0d33716284";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -456,6 +466,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "5cb5cf52-6f3b-40b9-a221-3c0d33716284";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -465,15 +476,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-starter-project-1-4/ParseStarterProject",
 					"$(PROJECT_DIR)/parse-starter-project-1-4/ParseSwiftStarterProject",
 					"$(PROJECT_DIR)/ParseStarterProject",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = JaYinet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5cb5cf52-6f3b-40b9-a221-3c0d33716284";
 			};
 			name = Debug;
 		};
@@ -481,15 +495,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-starter-project-1-4/ParseStarterProject",
 					"$(PROJECT_DIR)/parse-starter-project-1-4/ParseSwiftStarterProject",
 					"$(PROJECT_DIR)/ParseStarterProject",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = JaYinet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5cb5cf52-6f3b-40b9-a221-3c0d33716284";
 			};
 			name = Release;
 		};

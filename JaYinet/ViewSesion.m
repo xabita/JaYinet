@@ -39,6 +39,12 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             NSLog(@"logueadooooo");
+                                            // Associate the device with a user
+                                            PFInstallation *installation = [PFInstallation currentInstallation];
+                                            installation[@"user"] = [PFUser currentUser];
+                                            [installation saveInBackground];
+                                            
+                                            
                                         } else {
                                             // The login failed. Check error to see why.
                                         }
