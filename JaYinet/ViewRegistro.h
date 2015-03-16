@@ -25,6 +25,12 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtResponsable;
 @property (strong, nonatomic) IBOutlet UITextField *txtCelular;
 
+@property (strong, nonatomic) IBOutlet UITextField *txtCama;
+
+@property (strong, nonatomic) IBOutlet UITextField *txtArea;
+@property (strong, nonatomic) IBOutlet UILabel *lblCama;
+@property (strong, nonatomic) IBOutlet UILabel *lblArea;
+
 
 
 - (IBAction)btnGuardar:(id)sender;

@@ -37,6 +37,7 @@
 		2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 2678202B1AAEE6D6000065A4 /* ViewBuscaPaciente.m */; };
 		2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */ = {isa = PBXBuildFile; fileRef = 2678202E1AAEE778000065A4 /* ViewEstado.m */; };
 		267820321AAEE994000065A4 /* ViewHistorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 267820311AAEE994000065A4 /* ViewHistorial.m */; };
+		26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E4A1AB6542F0029D190 /* ViewSesion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		2678202E1AAEE778000065A4 /* ViewEstado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewEstado.m; sourceTree = "<group>"; };
 		267820301AAEE994000065A4 /* ViewHistorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHistorial.h; sourceTree = "<group>"; };
 		267820311AAEE994000065A4 /* ViewHistorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistorial.m; sourceTree = "<group>"; };
+		26CA0E491AB6542F0029D190 /* ViewSesion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSesion.h; sourceTree = "<group>"; };
+		26CA0E4A1AB6542F0029D190 /* ViewSesion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSesion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				260492541AAC360B0005DDA4 /* AppDelegate.m */,
 				260492561AAC360B0005DDA4 /* Welcome.h */,
 				260492571AAC360B0005DDA4 /* Welcome.m */,
+				26CA0E491AB6542F0029D190 /* ViewSesion.h */,
+				26CA0E4A1AB6542F0029D190 /* ViewSesion.m */,
 				260492591AAC360B0005DDA4 /* Main.storyboard */,
 				2604925C1AAC360B0005DDA4 /* Images.xcassets */,
 				2604925E1AAC360B0005DDA4 /* LaunchScreen.xib */,
@@ -334,6 +339,7 @@
 				2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */,
 				260492581AAC360B0005DDA4 /* Welcome.m in Sources */,
 				2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */,
+				26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */,
 				260492551AAC360B0005DDA4 /* AppDelegate.m in Sources */,
 				260492521AAC360B0005DDA4 /* main.m in Sources */,
 				267820321AAEE994000065A4 /* ViewHistorial.m in Sources */,

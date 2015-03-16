@@ -15,8 +15,12 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPaciente;
 @property (strong, nonatomic) IBOutlet UIButton *btnRegistrar;
 @property (strong, nonatomic) IBOutlet UIButton *btnHistorial;
-@property (strong, nonatomic) IBOutlet UILabel *lblNombre;
 @property (strong, nonatomic) IBOutlet UIButton *btnBuscar;
+@property (strong, nonatomic) IBOutlet UILabel *lblEstado;
+@property (strong, nonatomic) IBOutlet UITextField *txtNombre;
+@property (strong, nonatomic) IBOutlet UITextField *txtPaterno;
+@property (strong, nonatomic) IBOutlet UITextField *txtMaterno;
+@property (strong, nonatomic) IBOutlet UITextField *txtRespaciente;
 - (IBAction)btnBuscar:(id)sender;
 
 @end

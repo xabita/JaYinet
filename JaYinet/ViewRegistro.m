@@ -7,7 +7,7 @@
 //
 
 #import "ViewRegistro.h"
-
+NSString *idpac;
 
 @interface ViewRegistro ()
 
@@ -36,7 +36,7 @@
 */
 
 - (IBAction)btnGuardar:(id)sender {
-    
+    /*
    //pacientes
     PFObject *pacienteObject = [PFObject objectWithClassName:@"pacientes"];
      pacienteObject[@"nom_paciente"] = self.txtNombre.text;
@@ -50,7 +50,7 @@
     PFObject *estadoObject = [PFObject objectWithClassName:@"historial"];
     estadoObject[@"desc_estado"] = self.txtEstado.text;
     // Add a relation between the Post and Comment
-    estadoObject[@"idpaciente"] = pacienteObject;
+    estadoObject[@"idpaciente"] = pacienteObject;    //estadoObject[@"id_pac"] = pacienteObject;
 
     [estadoObject saveInBackground];
     //datos responsable
@@ -64,6 +64,69 @@
         if (succeeded) {
             NSLog(@"Guardando idddd %@", pacienteObject.objectId);
             // The object has been saved.
+        } else {
+            // There was a problem, check error.description
+        }
+    }];*/
+    
+    
+    PFObject *pacienteObject = [PFObject objectWithClassName:@"pacientes"];
+    pacienteObject[@"nom_paciente"] = self.txtNombre.text;
+    pacienteObject[@"ap_paterno"] = self.txtPaterno.text;
+    pacienteObject[@"ap_materno"] = self.txtMaterno.text;
+    pacienteObject[@"domicilio"] = self.txtDomicilio.text;
+    [pacienteObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            
+            
+            // The object has been saved.
+            idpac=pacienteObject.objectId;
+              NSLog(@"Guardando idddd %@", idpac);
+            
+            
+          /*  PFObject *estadoObject = [PFObject objectWithClassName:@"historial"];
+            estadoObject[@"desc_estado"] = self.txtEstado.text;
+            // Add a relation between the Post and Comment
+           // estadoObject[@"idpaciente"] = pacienteObject;
+            estadoObject[@"id_pac"] =  idpac;*/
+            
+            PFObject *estadoObject = [PFObject objectWithClassName:@"historial"];
+            estadoObject[@"desc_estado"] = self.txtEstado.text;
+            estadoObject[@"id_pac"] = idpac;
+            estadoObject[@"num_cama"] = self.txtCama.text;
+            estadoObject[@"id_area"] = self.txtArea.text;
+
+            [estadoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                     NSLog(@"historial guardado %@", estadoObject.objectId);
+                } else {
+                    // There was a problem, check error.description
+                }
+            }];
+            
+            
+            PFObject *responsableObject = [PFObject objectWithClassName:@"responsables"];
+        
+            responsableObject[@"nom_responsable"] = self.txtResponsable.text;
+            responsableObject[@"no_movil"] = self.txtCelular.text;
+            responsableObject[@"id_pac"] = idpac;
+            
+            [responsableObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    NSLog(@"responsables guardado %@", responsableObject.objectId);
+                } else {
+                    // There was a problem, check error.description
+                }
+            }];
+
+            
+            
+
+            
+            
+            
+            
+            
         } else {
             // There was a problem, check error.description
         }

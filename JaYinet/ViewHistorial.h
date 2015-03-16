@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ViewHistorial : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnRegresar;
+@property (strong, nonatomic) IBOutlet UIButton *btnEstado;
+@property (strong, nonatomic) IBOutlet UITextField *txtPaciente;
+@property (strong, nonatomic) IBOutlet UITextView *txtNomCompleto;
+
+@property (nonatomic, strong) NSString *no_paciente;
+
 
 @end
