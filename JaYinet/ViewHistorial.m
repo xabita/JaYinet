@@ -7,6 +7,8 @@
 //
 
 #import "ViewHistorial.h"
+#import "cell.h"
+
 
 @interface ViewHistorial ()
 
@@ -63,5 +65,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
 
 @end

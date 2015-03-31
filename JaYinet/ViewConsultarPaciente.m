@@ -9,7 +9,7 @@
 #import "ViewConsultarPaciente.h"
 #import "ViewRegistroResponsable.h"
 #import "ViewHistorialPaciente.h"
-
+UIAlertView *alert;
 
 
 NSString *idpaciente;
@@ -63,8 +63,52 @@ NSString *idpaciente;
 
 
 - (IBAction)btnBuscar:(id)sender {
+
+    
+    [PFUser logInWithUsernameInBackground:self.txtRespaciente.text password:self.txtRespaciente.text
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            NSLog(@"logueadooooo");
+                                            // Associate the device with a user
+                                            PFInstallation *installation = [PFInstallation currentInstallation];
+                                            installation[@"user"] = [PFUser currentUser];
+                                            [installation saveInBackground];
+                                            
+                                            
+                                            
+                                        } else {
+                                            
+                                            
+                                            alert = [[UIAlertView alloc] initWithTitle:@"Alerta Oaxaca"
+                                                                               message:@"Error de inicio de sesion"
+                                                                              delegate:self
+                                                                     cancelButtonTitle:@"Cancelar"
+                                                                     otherButtonTitles: nil];
+                                            [alert show];
+                                            
+                                            
+                                        }
+                                    }];
     
     
+    
+ //crear viecontroller de iniccio de sesion de responsables
+    
+    
+  /*
+     PFUser *currentUser = [PFUser currentUser];
+     if (currentUser) {
+     NSLog(@"Usuario Actual :: %@", currentUser);
+     } else {
+     // show the signup or login screen
+     }
+    
+    // Associate the device with a user
+    PFInstallation *installation = [PFInstallation currentInstallation];
+    installation[@"user"] = [PFUser currentUser];
+    [installation saveInBackground];
+    
+    */
     
     PFQuery *query = [PFQuery queryWithClassName:@"pacientes"];
     [query whereKey:@"objectId" equalTo:self.txtPaciente.text];
@@ -101,7 +145,32 @@ NSString *idpaciente;
                         NSLog(@"Error: %@ %@", errorh, [errorh userInfo]);
                     }
                 }];
+              
                 
+                
+                ///
+                
+                PFUser *user = [PFUser user];
+                user.username = self.txtRespaciente.text;
+                user.password = self.txtRespaciente.text;
+                
+                // other fields can be set just like with PFObject
+                user[@"id_paciente"] = self.txtRespaciente.text;
+                
+                [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        // Hooray! Let them use the app now.
+                        PFInstallation *installation = [PFInstallation currentInstallation];
+                        installation[@"user"] = [PFUser currentUser];
+                        [installation saveInBackground];
+                        
+                        
+                    } else {
+                        NSString *errorString = [error userInfo][@"error"];
+                        // Show the errorString somewhere and let the user try again.
+                    }
+                }];
+
                 
                 
                 

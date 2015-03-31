@@ -37,19 +37,34 @@ UIAlertView     *alert;
 */
 
 - (IBAction)btnEntrar:(id)sender {
+    
+    [PFUser logInWithUsernameInBackground:self.txtUsuario.text  password:self.txtUsuario.text
+        block:^(PFUser *user, NSError *error) {
+        if (user) {
+            NSLog(@"Logueado");
+        } else {
+            
+            NSLog(@"No Logueado");
+
+        // The login failed. Check error to see why.
+        }
+    }];
+    
+    
+   /*
     [PFUser logInWithUsernameInBackground:self.txtUsuario.text password:self.txtPassword.text
-                                    block:^(PFUser *user, NSError *error) {
-                                        if (user) {
-                                            NSLog(@"logueadooooo");
+                        block:^(PFUser *user, NSError *error) {
+                        if (user) {
+                            NSLog(@"logueadooooo");
                                             // Associate the device with a user
-                                            PFInstallation *installation = [PFInstallation currentInstallation];
+                                           PFInstallation *installation = [PFInstallation currentInstallation];
                                             installation[@"user"] = [PFUser currentUser];
                                             [installation saveInBackground];
-                                            
+    
+                                            [self performSegueWithIdentifier:@"segueIniciaSesion" sender:self];
                                             
                                             
                                         } else {
-                                            
                                             
                                             alert = [[UIAlertView alloc] initWithTitle:@"Alerta Oaxaca"
                                                                                message:@"Error de inicio de sesion"
@@ -58,9 +73,12 @@ UIAlertView     *alert;
                                                                      otherButtonTitles: nil];
                                             [alert show];
                                             
+                                            [self performSegueWithIdentifier:@"segueCerrarSesion" sender:self];
+                                            
+                                            
                                             
                                         }
-                                    }];
+                                    }];*/
     
     
 }

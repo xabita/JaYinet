@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface ViewConsultarPaciente : UIViewController
+@interface ViewConsultarPaciente : UIViewController<UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *btnRegresar;
 @property (strong, nonatomic) IBOutlet UIButton *btnRegistrar;

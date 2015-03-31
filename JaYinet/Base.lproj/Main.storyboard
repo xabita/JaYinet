@@ -17,10 +17,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.54117647058823526" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Registrar">
+                                <state key="normal" title="Probar Tabla">
                                     <color key="titleColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AI9-Z4-zBI" kind="modal" id="vQS-wr-Z3z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GZb-eu-Zby">
                                 <rect key="frame" x="34" y="84" width="252" height="48"/>
@@ -58,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72" y="266"/>
+            <point key="canvasLocation" x="-810" y="557"/>
         </scene>
         <!--View Registro-->
         <scene sceneID="PXW-7v-yc6">
@@ -232,7 +235,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-415" y="1700"/>
+            <point key="canvasLocation" x="-632" y="2888"/>
         </scene>
         <!--View Busca Paciente-->
         <scene sceneID="Zeq-3Y-Rvs">
@@ -403,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipi-HB-d54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="1700"/>
+            <point key="canvasLocation" x="89" y="2210"/>
         </scene>
         <!--View Estado-->
         <scene sceneID="dc9-Hc-7aN">
@@ -521,7 +524,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsH-eq-13I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="2188"/>
+            <point key="canvasLocation" x="883" y="2520"/>
         </scene>
         <!--View Sesion-->
         <scene sceneID="M7a-b0-QhC">
@@ -583,7 +586,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnEntrar:" destination="eqq-wY-mVW" eventType="touchUpInside" id="OrK-Mz-H3C"/>
-                                    <segue destination="DWF-eH-hFj" kind="modal" id="j46-q4-3OU"/>
+                                    <segue destination="DWF-eH-hFj" kind="modal" identifier="segueIniciaSession" id="HED-se-2lU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -598,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPi-Kj-2Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72" y="1009"/>
+            <point key="canvasLocation" x="-786" y="1447"/>
         </scene>
         <!--View Consultar Paciente-->
         <scene sceneID="88i-9U-K77">
@@ -662,7 +665,7 @@
                                     <action selector="btnBuscar:" destination="RQ1-zO-uzw" eventType="touchUpInside" id="a38-X9-1KN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jhi1hDKhMj" borderStyle="roundedRect" placeholder="Numero de registro" minimumFontSize="17" id="cGC-Eg-zQ4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P9pYBWMsRf" borderStyle="roundedRect" placeholder="Numero de registro" minimumFontSize="17" id="cGC-Eg-zQ4">
                                 <rect key="frame" x="34" y="164" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -773,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdM-hg-chF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="266"/>
+            <point key="canvasLocation" x="-13" y="266"/>
         </scene>
         <!--View Menu-->
         <scene sceneID="nz9-RO-VAJ">
@@ -820,12 +823,12 @@
                                 </state>
                                 <connections>
                                     <action selector="btnCerrar:" destination="DWF-eH-hFj" eventType="touchUpInside" id="evq-hR-rNi"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="4y7-5O-TAE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="33t-oZ-2rj"/>
                     <connections>
                         <outlet property="btnCerrar" destination="zpS-hO-2LD" id="sDd-G7-KAh"/>
                         <outlet property="btnConsultar" destination="irS-0Q-bAd" id="oyi-Vt-YOx"/>
@@ -834,7 +837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwn-rG-Eu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-54" y="1700"/>
+            <point key="canvasLocation" x="-76" y="1391"/>
         </scene>
         <!--View Registro Responsable-->
         <scene sceneID="WEa-OY-gqL">
@@ -931,7 +934,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGC-7j-srI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="672" y="266"/>
+            <point key="canvasLocation" x="400" y="266"/>
         </scene>
         <!--View Historial-->
         <scene sceneID="rL0-9h-5ja">
@@ -1010,15 +1013,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91105042489999999" green="0.92858270200000004" blue="0.89459432719999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DLV-Mz-f6E">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DLV-Mz-f6E" customClass="cell">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLV-Mz-f6E" id="6xa-W6-Rom">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SZM-qu-OEO">
+                                                    <rect key="frame" x="27" y="8" width="273" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="cell" destination="6xa-W6-Rom" id="y6q-Gb-1xv"/>
+                                            <outlet property="lblStatus" destination="SZM-qu-OEO" id="Eur-d5-AYr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="D3O-PY-s0l" id="ecB-qq-FFu"/>
+                                    <outlet property="delegate" destination="D3O-PY-s0l" id="zH1-7q-8fM"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historial del  Paciente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gf9-8S-vGP">
                                 <rect key="frame" x="0.0" y="47" width="320" height="30"/>
@@ -1032,6 +1052,7 @@
                         <color key="backgroundColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="Table" destination="0HT-bV-46n" id="npE-9c-fzV"/>
                         <outlet property="btnEstado" destination="Kz3-MQ-xc1" id="L1F-fz-K1t"/>
                         <outlet property="btnRegresar" destination="xe0-8e-ZYa" id="2OC-7P-hMy"/>
                         <outlet property="txtNomCompleto" destination="ena-9v-WWY" id="kXh-DB-6TM"/>
@@ -1040,7 +1061,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHE-aD-woU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="1576"/>
+            <point key="canvasLocation" x="883" y="1670"/>
+        </scene>
+        <!--Lista Historial Controller-->
+        <scene sceneID="fC1-cB-9lJ">
+            <objects>
+                <tableViewController id="AI9-Z4-zBI" customClass="ListaHistorialController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EK9-xM-coK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellHistorial" id="uUw-wc-Mz2" customClass="cellHist">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uUw-wc-Mz2" id="yZ7-oS-REV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="928-Z3-1g2">
+                                            <rect key="frame" x="8" y="11" width="304" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblEstatus" destination="yZ7-oS-REV" id="nWl-1o-sNJ"/>
+                                    <outlet property="lbl_Estatus" destination="928-Z3-1g2" id="lJs-TA-yHv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AI9-Z4-zBI" id="j04-bl-YAo"/>
+                            <outlet property="delegate" destination="AI9-Z4-zBI" id="rdS-L8-Dj3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGE-hX-JyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="882"/>
         </scene>
         <!--View Historial Paciente-->
         <scene sceneID="e9Z-UQ-fIN">
@@ -1117,6 +1177,56 @@
             </objects>
             <point key="canvasLocation" x="1014" y="266"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="c4a-ar-FTb">
+            <objects>
+                <viewController id="9tC-vb-efW" customClass="Welcome" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98Q-0E-b78">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ANH-y0-tgi">
+                                <rect key="frame" x="34" y="200" width="252" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hLU-Ur-8dj">
+                                <rect key="frame" x="34" y="84" width="252" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Consultar Paciente">
+                                    <color key="titleColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tTi-Wk-mt5">
+                                <rect key="frame" x="34" y="146" width="252" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97907066460000003" green="1" blue="0.97492459330000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_new" destination="ANH-y0-tgi" id="6gM-qN-D2C"/>
+                        <outlet property="btn_search" destination="hLU-Ur-8dj" id="a2r-Vr-028"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVr-Ot-xt7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="-498"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1124,9 +1234,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="j46-q4-3OU"/>
-        <segue reference="4eH-V0-Rkc"/>
-        <segue reference="HdD-iK-PC6"/>
-        <segue reference="kUr-Dq-gYV"/>
+        <segue reference="LkK-DL-wcC"/>
+        <segue reference="Qub-n9-oMc"/>
+        <segue reference="HED-se-2lU"/>
+        <segue reference="Iuu-YD-M6x"/>
     </inferredMetricsTieBreakers>
 </document>

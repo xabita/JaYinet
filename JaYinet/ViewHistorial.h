@@ -8,14 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <ParseUI/PFQueryTableViewController.h>
 
-@interface ViewHistorial : UIViewController
+
+
+@interface ViewHistorial : UIViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UIButton *btnRegresar;
 @property (strong, nonatomic) IBOutlet UIButton *btnEstado;
 @property (strong, nonatomic) IBOutlet UITextField *txtPaciente;
 @property (strong, nonatomic) IBOutlet UITextView *txtNomCompleto;
 
 @property (nonatomic, strong) NSString *no_paciente;
+
+@property (strong, nonatomic) IBOutlet UITableView *Table;
 
 
 @end

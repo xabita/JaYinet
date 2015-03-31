@@ -21,13 +21,13 @@ NSString *idpaciente;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+/*
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
          NSLog(@"Usuario Actual :: %@", currentUser);
     } else {
         // show the signup or login screen
-    }
+    }*/
     
     NSDictionary *dimensions = @{
                                  // What type of news is this?

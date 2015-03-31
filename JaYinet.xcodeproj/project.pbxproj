@@ -44,6 +44,9 @@
 		26CA0E551AB77BF00029D190 /* ViewConsultarPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E541AB77BF00029D190 /* ViewConsultarPaciente.m */; };
 		26CA0E581AB7809F0029D190 /* ViewHistorialPaciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E571AB7809F0029D190 /* ViewHistorialPaciente.m */; };
 		26CA0E5B1AB780CE0029D190 /* ViewRegistroResponsable.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA0E5A1AB780CE0029D190 /* ViewRegistroResponsable.m */; };
+		26CC5D731ACA93A100355904 /* cellHist.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC5D721ACA93A100355904 /* cellHist.m */; };
+		26CC5D771ACA98CF00355904 /* ListaHistorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC5D761ACA98CF00355904 /* ListaHistorialController.m */; };
+		26EDD90B1AC9051D00D0E247 /* cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EDD90A1AC9051D00D0E247 /* cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,12 @@
 		26CA0E571AB7809F0029D190 /* ViewHistorialPaciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHistorialPaciente.m; sourceTree = "<group>"; };
 		26CA0E591AB780CE0029D190 /* ViewRegistroResponsable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRegistroResponsable.h; sourceTree = "<group>"; };
 		26CA0E5A1AB780CE0029D190 /* ViewRegistroResponsable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRegistroResponsable.m; sourceTree = "<group>"; };
+		26CC5D711ACA93A100355904 /* cellHist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellHist.h; sourceTree = "<group>"; };
+		26CC5D721ACA93A100355904 /* cellHist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellHist.m; sourceTree = "<group>"; };
+		26CC5D751ACA98CF00355904 /* ListaHistorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaHistorialController.h; sourceTree = "<group>"; };
+		26CC5D761ACA98CF00355904 /* ListaHistorialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaHistorialController.m; sourceTree = "<group>"; };
+		26EDD9091AC9051D00D0E247 /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
+		26EDD90A1AC9051D00D0E247 /* cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +162,8 @@
 		260492431AAC360B0005DDA4 = {
 			isa = PBXGroup;
 			children = (
+				26CC5D741ACA989F00355904 /* Paciente */,
+				26EDD90C1AC9052F00D0E247 /* Customized */,
 				2604930C1AAD65A10005DDA4 /* Framework */,
 				260492C41AAD589B0005DDA4 /* ParseStarterProject */,
 				2604924E1AAC360B0005DDA4 /* JaYinet */,
@@ -264,6 +275,26 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		26CC5D741ACA989F00355904 /* Paciente */ = {
+			isa = PBXGroup;
+			children = (
+				26CC5D751ACA98CF00355904 /* ListaHistorialController.h */,
+				26CC5D761ACA98CF00355904 /* ListaHistorialController.m */,
+			);
+			name = Paciente;
+			sourceTree = "<group>";
+		};
+		26EDD90C1AC9052F00D0E247 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				26CC5D711ACA93A100355904 /* cellHist.h */,
+				26CC5D721ACA93A100355904 /* cellHist.m */,
+				26EDD9091AC9051D00D0E247 /* cell.h */,
+				26EDD90A1AC9051D00D0E247 /* cell.m */,
+			);
+			name = Customized;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,8 +396,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EDD90B1AC9051D00D0E247 /* cell.m in Sources */,
 				2678202F1AAEE778000065A4 /* ViewEstado.m in Sources */,
+				26CC5D731ACA93A100355904 /* cellHist.m in Sources */,
 				26CA0E551AB77BF00029D190 /* ViewConsultarPaciente.m in Sources */,
+				26CC5D771ACA98CF00355904 /* ListaHistorialController.m in Sources */,
 				260492581AAC360B0005DDA4 /* Welcome.m in Sources */,
 				2678202C1AAEE6D6000065A4 /* ViewBuscaPaciente.m in Sources */,
 				26CA0E4B1AB6542F0029D190 /* ViewSesion.m in Sources */,
