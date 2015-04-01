@@ -11,8 +11,13 @@
 @interface ViewSesion : UIViewController<UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *txtUsuario;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
+
+
 @property (strong, nonatomic) IBOutlet UIButton *btnEntrar;
+
+
 - (IBAction)btnEntrar:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UIButton *btnRegresar;
 
 @end

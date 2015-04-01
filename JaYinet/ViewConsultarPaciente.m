@@ -9,6 +9,8 @@
 #import "ViewConsultarPaciente.h"
 #import "ViewRegistroResponsable.h"
 #import "ViewHistorialPaciente.h"
+#import "NuevoHistorial.h"
+
 UIAlertView *alert;
 
 
@@ -50,12 +52,19 @@ NSString *idpaciente;
         Viewhist.idpaciente = self.txtRespaciente.text;
     }
 
+    
+    NSLog(@"segueRespaciente retrieved %@", @"SegueHistorialN");
+    if ([[segue identifier] isEqualToString:@"SegueHistorialN"]) {
+        NSLog(@"selftxt  %@", self.txtRespaciente.text);
+        NuevoHistorial *ViewHistorial = [segue destinationViewController];
+        ViewHistorial.idpaciente = self.txtRespaciente.text;
+    }
+    
     /*
     
     NSLog(@"segueRespaciente retrieved %@", @"saga");
  if ([[segue identifier] isEqualToString:@"segueHistorial"]) {
-        NSLog(@"selftxt  %@", self.txtRespaciente.text);
-        ViewHistorial *Viewhist = [segue destinationViewController];
+       self.txtPaciente.text=_idpaciente;        ViewHistorial *Viewhist = [segue destinationViewController];
         Viewhist.no_paciente = self.txtRespaciente.text;
     }*/
 }

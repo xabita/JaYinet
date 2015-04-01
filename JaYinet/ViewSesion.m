@@ -36,22 +36,17 @@ UIAlertView     *alert;
 }
 */
 
-- (IBAction)btnEntrar:(id)sender {
-    
-    [PFUser logInWithUsernameInBackground:self.txtUsuario.text  password:self.txtUsuario.text
-        block:^(PFUser *user, NSError *error) {
-        if (user) {
-            NSLog(@"Logueado");
-        } else {
-            
-            NSLog(@"No Logueado");
 
-        // The login failed. Check error to see why.
-        }
-    }];
+
+
+- (IBAction)btnEntrar:(id)sender {
+  
+   /*  if ([self.txtUsuario.text isEqualToString:@"eli"] && [self.txtPassword.text isEqualToString:@"eli"]) {
+        NSLog(@"HolAAA");
+    }else
+    { NSLog(@"MALLLL MALLL MALLL");}
+    */
     
-    
-   /*
     [PFUser logInWithUsernameInBackground:self.txtUsuario.text password:self.txtPassword.text
                         block:^(PFUser *user, NSError *error) {
                         if (user) {
@@ -61,7 +56,7 @@ UIAlertView     *alert;
                                             installation[@"user"] = [PFUser currentUser];
                                             [installation saveInBackground];
     
-                                            [self performSegueWithIdentifier:@"segueIniciaSesion" sender:self];
+                                            [self performSegueWithIdentifier:@"SessionSegue" sender:self];
                                             
                                             
                                         } else {
@@ -78,7 +73,9 @@ UIAlertView     *alert;
                                             
                                             
                                         }
-                                    }];*/
+                                    }];
+    
+    
     
     
 }

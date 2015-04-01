@@ -17,8 +17,6 @@
 @implementation ListaHistorialController
 
 
-
-
 - (id)initWithCoder:(NSCoder *)aCoder
 {
     self = [super initWithCoder:aCoder];
@@ -93,9 +91,6 @@
     // Configure the cell
     
     cell.lbl_Estatus.text = [object objectForKey:@"desc_estado"];
-   // cell.lblDescripcionPanaderia.text = [object objectForKey:@"descripcion"];
-    
-    
     return cell;
 }
 

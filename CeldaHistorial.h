@@ -1,5 +1,5 @@
 //
-//  cellHist.h
+//  CeldaHistorial.h
 //  JaYinet
 //
 //  Created by Elizabeth Martínez Gómez on 31/03/15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface cellHist : UITableViewCell
-
-@property (strong, nonatomic) IBOutlet UILabel *lbl_Estatus;
-
+@interface CeldaHistorial : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *lbl_historial;
 
 @end
